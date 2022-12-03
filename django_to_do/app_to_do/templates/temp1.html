@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do App</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div id="main-container">
+
+        <div id="header-container">
+            <h1>To do App</h1>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+    </div>  
+</body>
+</html>
+

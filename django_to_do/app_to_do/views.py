@@ -8,3 +8,6 @@ def index(request):
         'tasks': tasks,
     }
     return render(request, 'index.html', context)
+
+def add_task(request):
+    return render(request, 'add_task.html')
