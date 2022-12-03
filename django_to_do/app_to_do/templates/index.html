@@ -1,9 +1,41 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do App</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
 <body>
+    <div id="main-container">
 
-<h1>To do list Application</h1>
-<p>Welcome in TO DO App</p>
+        <div id="header-container">
+            <h1>To do App</h1>
+        </div>
 
+        <div id="add-button">
+            <p>+ add new task</p>
+        </div>
+
+        {% for x in tasks %}
+            <div class="task-container">
+
+                <div class="task-text">
+                    <p><b>{{ x.title }}</b> - {{ x.description }}</p>
+                </div>
+                
+                <div class="task-edit">
+                    <a href="" class="edit-link">edit</a>
+                </div>
+
+                <div class="task-delete">
+                    <a href="" class="delete-link">delete</a>
+                </div>
+
+            </div>            
+        {% endfor %}
+
+    </div>  
 </body>
 </html>
+
