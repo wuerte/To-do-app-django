@@ -1,5 +1,22 @@
 {% extends 'temp1.html' %}
 
 {% block content %}
-  <p>This page has a master page</p>
+
+  <h2>Add task:</h2>
+
+  <div id="add-task-form">
+    <form action="add_task_record" method="post">
+      {% csrf_token %}
+      Task title:<br>
+      <input name="title" type="text">
+      <br><br>
+      Description:<br>
+      <textarea name="description" rows="10" cols="40"></textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+  
 {% endblock %} 

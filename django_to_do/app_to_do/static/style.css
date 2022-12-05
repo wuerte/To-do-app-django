@@ -3,7 +3,7 @@
     --white: #ffffff;
   }
 
-  
+
 body {
     background-image: linear-gradient(to right, rgb(95, 193, 228), rgb(111, 220, 158));
     opacity: 1;
@@ -19,6 +19,7 @@ body {
     margin-top: 80px;
     border-radius: var(--borRad);
     min-height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -116,6 +117,25 @@ h1 {
     left: 0;
     z-index: 1;
 }
+
+h2 {
+    text-align: center;
+}
+
+#add-task-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid purple;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(243, 201, 247);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
 
 a:link { text-decoration: none; }
 
